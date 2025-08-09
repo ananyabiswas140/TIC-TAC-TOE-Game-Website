@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full_web{
+    height: 100vh;
+    width: auto;
+    background-image: url('tic tac toe 1.jpg');
+    background-size: cover;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box_1{
+    height:185px;
+    width: auto;
+    color : #1829ae;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box_2{
+    height: 430px;
+    width: 500px;
+    position: relative;
+    color: rgb(77, 62, 62);
+    /* background-image: url('tic tac toe crop.jpg'); 
+    background-size: cover;
+    background-position: center;*/
+    box-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff,
+    0 0 40px #ffffff;
+    background-color: transparent;
+    border-radius: 50px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    overflow: hidden;
+}
+.box_2::after{
+    content: '';
+    position: absolute;
+    height: 700px;
+    width: 200px;
+    background: rgb(29, 29, 255);
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+    animation: animate 2s infinite linear;
+}
+@keyframes animate {
+    100%{
+        transform: translate(-50%, -50%) rotate(225deg) ;
+    }
+}
+.inner_box2{
+    height: 420px;
+    width: 490px;
+    position: relative;
+    background-image: url('tic tac toe crop.jpg');
+    background-size: cover;
+    border-radius: 50px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 
+    0 0 5px rgba(228, 255, 244, 0.86),
+    0 0 10px rgba(228, 255, 244, 0.86),
+    0 0 20px rgba(228, 255, 244, 0.86),
+    0 0 40px rgba(228, 255, 244, 0.86),
+    0 0 80px rgba(228, 255, 244, 0.86);
+    background-color: rgb(77, 62, 62);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hover:hover{
+    background: conic-gradient(rgb(56, 56, 255),rgb(107, 107, 211),aqua,white,rgb(18, 148, 255),rgb(107, 107, 211), rgb(56, 56, 255));
+    color: rgb(29, 12, 12);
+    
+}
+#p1{
+    font-size: 3rem;
+    text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 40px #ffffff,
+    0 0 80px #ffffff;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#p2{
+    font-size: 1.25rem;
+    font-weight: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#p3{
+    color: rgb(15, 15, 174); 
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow:
+    0 0 5px #ffffff,    
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff,
+    0 0 40px #ffffff;
+    font-family:'Times New Roman', Times, serif
+}
