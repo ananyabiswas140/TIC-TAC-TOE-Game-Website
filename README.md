@@ -31,3 +31,14 @@ This project focuses on clean UI design and basic game logic using pure frontend
 
 <img width="1917" height="862" alt="TIE" src="https://github.com/user-attachments/assets/ac17f03f-354e-4f25-8522-8f72918d76c4" />
 
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/ananyabiswas140/TIC-TAC-TOE-Game-Website.git
+
+2. Go to index.html file and run the code
+
+### ✨Play the game live using the link above and enjoy a classic Tic Tac Toe experience!
